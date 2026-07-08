@@ -1,0 +1,37 @@
+# Copy to wechat-publisher.yaml and fill local credentials.
+# Do not commit the real file.
+
+default: main
+
+accounts:
+  main:
+    name: "My Official Account"
+    app_id: "wx..."
+    app_secret: "your_app_secret_here"
+    author: "Author"
+    theme: "refined-blue"
+    image_style: "warm-handdrawn"
+    newspic_image_style: "infographic-warm"
+
+  tech:
+    name: "My Tech Account"
+    app_id: "wx..."
+    app_secret: "another_app_secret"
+    author: "Author"
+    theme: "minimal-mono"
+    image_style: "warm-handdrawn"
+    newspic_image_style: "infographic-blue"
+
+image_generation:
+  # API-based image generation only. Browser-cookie based generators are not included.
+  generator: "baoyu-image-gen"
+
+  openai:
+    api_key: ""
+    base_url: ""
+    image_model: ""
+
+  gemini_proxy:
+    api_key: ""
+    base_url: "https://generativelanguage.googleapis.com"
+    image_model: ""
